@@ -1,0 +1,19 @@
+meta {
+  name: Start all jobs
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8081/api/start-job
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  unidade: @file(C:\Users\a896556\OneDrive - ATOS\Documents\SMo\App\smo-start-api\mock\UNIDADEINSTITUICAO.xlsx)
+  tipo-terminal: @file(C:\Users\a896556\OneDrive - ATOS\Documents\SMo\App\smo-start-api\mock\TIPOS_TERMINAL.xlsx)
+  usuario: @file(C:\Users\a896556\OneDrive - ATOS\Documents\SMo\App\smo-start-api\mock\Base de Usuários e Terminais Atuailzada.xlsx)
+  transportadora: @file(C:\Users\a896556\OneDrive - ATOS\Documents\SMo\App\smo-start-api\mock\Transportadoras de Valores.xlsx)
+  terminal: @file(C:\Users\a896556\OneDrive - ATOS\Documents\SMo\App\smo-start-api\mock\TERMINAL.xlsx)
+}

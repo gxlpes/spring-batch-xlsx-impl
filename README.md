@@ -1,2 +1,2 @@
-# cool-intro-gsap
-Intro using GSAP
+# smo-start-api
+SMo API for uploading/processing/saving XLSX files
